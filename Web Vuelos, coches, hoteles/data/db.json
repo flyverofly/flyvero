@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "2b6ed56f-7837-4da2-bbb0-6493ac989f6b",
+      "name": "jose",
+      "email": "josereyeslopez25@gmail.com",
+      "passwordHash": "20be88b27c2376698f4c41b71caeb06e:a74c38488019b5c54cfcffe3184b0a4e2f6a1696ff031c7b4076b834ba1729e3",
+      "createdAt": "2026-05-27T14:47:08.376Z"
+    }
+  ],
+  "savedSearches": []
+}
