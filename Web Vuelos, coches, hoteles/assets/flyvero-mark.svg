@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-labelledby="title desc">
+  <title id="title">Flyvero mark</title>
+  <desc id="desc">Stylized Flyvero F with flight path</desc>
+  <path fill="#0047A8" d="M48 356 C73 244 75 139 126 87 C166 47 224 42 372 42 C365 70 350 92 326 106 C309 116 290 120 263 120 L168 120 C145 120 132 135 126 158 L118 191 C173 176 243 164 350 158 C265 181 166 227 48 356 Z"/>
+  <path fill="#00AFAE" d="M75 438 C121 381 145 324 158 254 L272 254 C265 290 247 316 219 333 C197 347 174 350 145 348 C129 385 106 414 75 438 Z"/>
+  <path fill="#FFFFFF" d="M117 245 C178 210 252 184 365 158 C251 192 165 230 79 306 C92 280 103 260 117 245 Z"/>
+  <path fill="#00AFAE" d="M124 244 C188 211 263 185 374 157 C262 196 174 235 87 315 C97 285 109 262 124 244 Z"/>
+</svg>
