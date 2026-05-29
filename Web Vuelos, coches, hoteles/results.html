@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Resultados de busqueda Flyvero con vuelos, hoteles, coches y paquetes." />
+  <meta name="description" content="Resultados de búsqueda Flyvero con vuelos, hoteles, coches y paquetes." />
   <title>Flyvero | Resultados</title>
   <link rel="icon" href="assets/flyvero-mark.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
@@ -13,8 +13,8 @@
     <a class="brand" href="index.html" aria-label="Flyvero inicio">
       <img src="assets/flyvero-logo.png" alt="Flyvero" />
     </a>
-    <nav class="main-nav" aria-label="Navegacion principal">
-      <a href="index.html#search">Nueva busqueda</a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="index.html#search">Nueva búsqueda</a>
       <a href="#results">Resultados</a>
       <a href="#filters">Filtros</a>
     </nav>
@@ -28,11 +28,11 @@
     <section class="results-hero" id="top">
       <div class="results-title">
         <p class="eyebrow dark">Flyvero Search</p>
-        <h1>Resultados de tu busqueda</h1>
+        <h1>Resultados de tu búsqueda</h1>
         <p id="resultSummary">Actualiza destino, fechas o viajeros para recalcular las ofertas.</p>
       </div>
 
-      <section class="search-card results-search-card" aria-label="Modificar busqueda">
+      <section class="search-card results-search-card" aria-label="Modificar búsqueda">
         <div class="product-tabs" role="tablist" aria-label="Tipo de viaje">
           <button type="button" class="product-tab active" data-product="flight">Vuelos</button>
           <button type="button" class="product-tab" data-product="hotel">Hoteles</button>
@@ -52,9 +52,9 @@
                 <button type="button" id="closeTripType" aria-label="Cerrar tipo de viaje">X</button>
                 <strong>Tipo de viaje</strong>
               </div>
-              <button type="button" class="trip-type-option" data-trip-type="oneway"><span>-></span><strong>Solo ida</strong></button>
+              <button type="button" class="trip-type-option" data-trip-type="oneway"><span>-&gt;</span><strong>Solo ida</strong></button>
               <button type="button" class="trip-type-option active" data-trip-type="roundtrip"><span>R</span><strong>Ida y vuelta</strong></button>
-              <button type="button" class="trip-type-option" data-trip-type="multi"><span>M</span><strong>Multiples destinos</strong></button>
+              <button type="button" class="trip-type-option" data-trip-type="multi"><span>M</span><strong>Múltiples destinos</strong></button>
             </div>
             <label class="direct-option" id="directOption">
               <input id="directFlights" type="checkbox" />
@@ -72,7 +72,7 @@
 
           <div class="input-group destination-wrap">
             <label for="destinationInput" id="destinationLabel">Destino</label>
-            <input id="destinationInput" type="text" value="Paris (CDG)" autocomplete="off" />
+            <input id="destinationInput" type="text" value="París (CDG)" autocomplete="off" />
             <div class="suggest-panel" id="destinationSuggest" hidden></div>
           </div>
 
@@ -92,7 +92,7 @@
                   <span id="calendarStep">Primero elige la ida</span>
                 </div>
                 <button type="button" class="month-nav" id="nextMonth" aria-label="Mes siguiente">&gt;</button>
-                <button type="button" id="closeCalendar" aria-label="Cerrar calendario">X</button>
+                <button type="button" id="closeCalendar" aria-label="Cerrar calendario">&times;</button>
               </div>
               <div class="price-legend">
                 <span><b class="dot cheap"></b> barato</span>
@@ -134,16 +134,16 @@
           <button type="button" id="resetFilters">Limpiar</button>
         </div>
         <label>
-          Precio maximo
+          Precio máximo
           <strong><span id="priceValue">900</span> EUR</strong>
           <input id="priceFilter" type="range" min="50" max="2500" value="900" step="25" />
         </label>
         <label>
           Ordenar por
           <select id="sortFilter">
-            <option value="smart">Mejor opcion</option>
+            <option value="smart">Mejor opción</option>
             <option value="price">Precio</option>
-            <option value="duration">Duracion</option>
+            <option value="duration">Duración</option>
           </select>
         </label>
         <label class="check-filter">

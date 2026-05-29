@@ -1,24 +1,24 @@
 const airports = [
-  { city: "Barcelona", code: "BCN", name: "Barcelona-El Prat", country: "Espana", nearby: [
-    { city: "Barcelona", code: "BCN", name: "Barcelona-El Prat", country: "Espana" },
-    { city: "Girona", code: "GRO", name: "Girona-Costa Brava", country: "Espana" },
-    { city: "Reus", code: "REU", name: "Reus Airport", country: "Espana" },
+  { city: "Barcelona", code: "BCN", name: "Barcelona-El Prat", country: "España", nearby: [
+    { city: "Barcelona", code: "BCN", name: "Barcelona-El Prat", country: "España" },
+    { city: "Girona", code: "GRO", name: "Girona-Costa Brava", country: "España" },
+    { city: "Reus", code: "REU", name: "Reus Airport", country: "España" },
   ] },
-  { city: "Madrid", code: "MAD", name: "Adolfo Suarez Madrid-Barajas", country: "Espana", nearby: [
-    { city: "Madrid", code: "MAD", name: "Adolfo Suarez Madrid-Barajas", country: "Espana" },
+  { city: "Madrid", code: "MAD", name: "Adolfo Suárez Madrid-Barajas", country: "España", nearby: [
+    { city: "Madrid", code: "MAD", name: "Adolfo Suárez Madrid-Barajas", country: "España" },
   ] },
-  { city: "Malaga", code: "AGP", name: "Malaga-Costa del Sol", country: "Espana", nearby: [
-    { city: "Malaga", code: "AGP", name: "Malaga-Costa del Sol", country: "Espana" },
-    { city: "Granada", code: "GRX", name: "Federico Garcia Lorca Granada-Jaen", country: "Espana" },
+  { city: "Málaga", code: "AGP", name: "Málaga-Costa del Sol", country: "España", nearby: [
+    { city: "Málaga", code: "AGP", name: "Málaga-Costa del Sol", country: "España" },
+    { city: "Granada", code: "GRX", name: "Federico García Lorca Granada-Jaén", country: "España" },
   ] },
-  { city: "Valencia", code: "VLC", name: "Valencia Airport", country: "Espana", nearby: [
-    { city: "Valencia", code: "VLC", name: "Valencia Airport", country: "Espana" },
-    { city: "Alicante", code: "ALC", name: "Alicante-Elche", country: "Espana" },
+  { city: "Valencia", code: "VLC", name: "Valencia Airport", country: "España", nearby: [
+    { city: "Valencia", code: "VLC", name: "Valencia Airport", country: "España" },
+    { city: "Alicante", code: "ALC", name: "Alicante-Elche", country: "España" },
   ] },
-  { city: "Paris", code: "CDG", name: "Charles de Gaulle", country: "Francia", nearby: [
-    { city: "Paris", code: "CDG", name: "Charles de Gaulle", country: "Francia" },
-    { city: "Paris Orly", code: "ORY", name: "Paris-Orly", country: "Francia" },
-    { city: "Paris Beauvais", code: "BVA", name: "Beauvais-Tille", country: "Francia" },
+  { city: "París", code: "CDG", name: "Charles de Gaulle", country: "Francia", nearby: [
+    { city: "París", code: "CDG", name: "Charles de Gaulle", country: "Francia" },
+    { city: "París Orly", code: "ORY", name: "Paris-Orly", country: "Francia" },
+    { city: "París Beauvais", code: "BVA", name: "Beauvais-Tille", country: "Francia" },
   ] },
   { city: "Londres", code: "LHR", name: "Heathrow", country: "Reino Unido", nearby: [
     { city: "Londres", code: "LHR", name: "Heathrow", country: "Reino Unido" },
@@ -33,23 +33,23 @@ const airports = [
 ];
 
 const hotelPlaces = [
-  { title: "Madrid", detail: "Comunidad de Madrid, Espana", type: "ciudad", icon: "H" },
-  { title: "Hotel Riu Plaza Espana", detail: "Madrid, Espana", type: "hotel", icon: "H" },
-  { title: "Centro Madrid", detail: "Madrid, Espana", type: "zona", icon: "Z" },
-  { title: "Paris", detail: "Isla de Francia, Francia", type: "ciudad", icon: "H" },
-  { title: "Centro Paris", detail: "Paris, Francia", type: "zona", icon: "Z" },
-  { title: "Pullman Paris Tour Eiffel", detail: "Paris, Francia", type: "hotel", icon: "H" },
-  { title: "Barcelona", detail: "Cataluna, Espana", type: "ciudad", icon: "H" },
-  { title: "Hotel Arts Barcelona", detail: "Barcelona, Espana", type: "hotel", icon: "H" },
+  { title: "Madrid", detail: "Comunidad de Madrid, España", type: "ciudad", icon: "H" },
+  { title: "Hotel Riu Plaza España", detail: "Madrid, España", type: "hotel", icon: "H" },
+  { title: "Centro Madrid", detail: "Madrid, España", type: "zona", icon: "Z" },
+  { title: "París", detail: "Isla de Francia, Francia", type: "ciudad", icon: "H" },
+  { title: "Centro París", detail: "París, Francia", type: "zona", icon: "Z" },
+  { title: "Pullman Paris Tour Eiffel", detail: "París, Francia", type: "hotel", icon: "H" },
+  { title: "Barcelona", detail: "Cataluña, España", type: "ciudad", icon: "H" },
+  { title: "Hotel Arts Barcelona", detail: "Barcelona, España", type: "hotel", icon: "H" },
 ];
 
 const carPlaces = [
-  { title: "Madrid Aeropuerto T4", detail: "Madrid-Barajas, Espana", type: "oficina", icon: "C" },
-  { title: "Madrid Atocha", detail: "Estacion de tren, Madrid", type: "oficina", icon: "C" },
-  { title: "Barcelona Aeropuerto", detail: "El Prat, Espana", type: "oficina", icon: "C" },
-  { title: "Barcelona Sants", detail: "Estacion de tren, Barcelona", type: "oficina", icon: "C" },
-  { title: "Malaga Aeropuerto", detail: "Costa del Sol, Espana", type: "oficina", icon: "C" },
-  { title: "Valencia Aeropuerto", detail: "Valencia, Espana", type: "oficina", icon: "C" },
+  { title: "Madrid Aeropuerto T4", detail: "Madrid-Barajas, España", type: "oficina", icon: "C" },
+  { title: "Madrid Atocha", detail: "Estación de tren, Madrid", type: "oficina", icon: "C" },
+  { title: "Barcelona Aeropuerto", detail: "El Prat, España", type: "oficina", icon: "C" },
+  { title: "Barcelona Sants", detail: "Estación de tren, Barcelona", type: "oficina", icon: "C" },
+  { title: "Málaga Aeropuerto", detail: "Costa del Sol, España", type: "oficina", icon: "C" },
+  { title: "Valencia Aeropuerto", detail: "Valencia, España", type: "oficina", icon: "C" },
 ];
 
 const productConfig = {
@@ -58,12 +58,12 @@ const productConfig = {
     destination: "Destino",
     date: "Fechas",
     emptyDate: "Ida y vuelta",
-    selectedDate: "Ida y vuelta seleccionadas",
+    selectedDate: "Ida y vuelta",
     pendingDate: "Ahora elige la vuelta",
     stepStart: "Primero elige la ida",
     stepEnd: "Ahora elige la vuelta",
     originDefault: "Barcelona (BCN)",
-    destinationDefault: "Paris (CDG)",
+    destinationDefault: "París (CDG)",
     showOrigin: true,
     showSwap: true,
     showOneWay: true,
@@ -74,7 +74,7 @@ const productConfig = {
     destination: "Destino o nombre de hotel",
     date: "Entrada - salida",
     emptyDate: "Selecciona estancia",
-    selectedDate: "Entrada y salida seleccionadas",
+    selectedDate: "Entrada y salida",
     pendingDate: "Ahora elige la salida",
     stepStart: "Elige la entrada",
     stepEnd: "Ahora elige la salida",
@@ -88,8 +88,8 @@ const productConfig = {
   car: {
     origin: "Recogida",
     destination: "Entrega",
-    date: "Recogida - devolucion",
-    emptyDate: "Fecha de recogida y devolucion",
+    date: "Recogida - devolución",
+    emptyDate: "Fecha de recogida y devolución",
     selectedDate: "Alquiler seleccionado",
     pendingDate: "Ahora elige la entrega",
     stepStart: "Elige la recogida",
@@ -106,12 +106,12 @@ const productConfig = {
     destination: "Destino o hotel",
     date: "Vuelo y hotel",
     emptyDate: "Vuelo y estancia",
-    selectedDate: "Pack seleccionado",
+    selectedDate: "Vuelo + hotel",
     pendingDate: "Ahora elige la vuelta",
     stepStart: "Elige la ida",
     stepEnd: "Ahora elige la vuelta",
     originDefault: "Barcelona (BCN)",
-    destinationDefault: "Paris",
+    destinationDefault: "París",
     showOrigin: true,
     showSwap: true,
     showOneWay: false,
@@ -119,7 +119,28 @@ const productConfig = {
   },
 };
 
+const productVisuals = {
+  flight: {
+    src: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2200&q=82",
+    alt: "Avión comercial despegando al atardecer",
+  },
+  hotel: {
+    src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2200&q=82",
+    alt: "Hotel moderno con piscina y zonas de descanso",
+  },
+  car: {
+    src: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2200&q=82",
+    alt: "Coche de alquiler circulando por carretera",
+  },
+  package: {
+    src: "assets/travel-hero.png",
+    alt: "Viaje combinado con destino, hotel y transporte",
+  },
+};
+
 const els = {
+  hero: document.querySelector(".hero"),
+  heroBg: document.querySelector(".hero-bg"),
   productTabs: document.querySelectorAll(".product-tab"),
   productNavLinks: document.querySelectorAll("[data-nav-product]"),
   tripForm: document.querySelector("#tripForm"),
@@ -150,6 +171,7 @@ const els = {
   calendarGrid: document.querySelector("#calendarGrid"),
   calendarMonth: document.querySelector("#calendarMonth"),
   calendarStep: document.querySelector("#calendarStep"),
+  priceLegend: document.querySelector(".price-legend"),
   prevMonth: document.querySelector("#prevMonth"),
   nextMonth: document.querySelector("#nextMonth"),
   dateTitle: document.querySelector("#dateTitle"),
@@ -213,6 +235,23 @@ function activeConfig() {
   return productConfig[product] || productConfig.flight;
 }
 
+function dateModeLabel() {
+  if (product === "hotel") return "Entrada y salida";
+  if (product === "car") return "Recogida y devolución";
+  if (product === "package") return "Vuelo + hotel";
+  return tripType === "oneway" ? "Solo ida" : "Ida y vuelta";
+}
+
+function updateHeroVisual() {
+  if (!els.hero || !els.heroBg) return;
+  const visual = productVisuals[product] || productVisuals.flight;
+  els.hero.dataset.product = product;
+  if (els.heroBg.getAttribute("src") !== visual.src) {
+    els.heroBg.src = visual.src;
+    els.heroBg.alt = visual.alt;
+  }
+}
+
 function findPlace(value, fallbackList) {
   const q = normalize(value);
   return fallbackList.find((place) => normalize(`${place.title} ${place.detail}`).includes(q) || q.includes(normalize(place.title))) || fallbackList[0];
@@ -252,7 +291,7 @@ function getCriteria() {
   return {
     product,
     origin: els.origin?.value || "Barcelona (BCN)",
-    destination: els.dest?.value || "Paris (CDG)",
+    destination: els.dest?.value || "París (CDG)",
     startDate: els.startDate?.value || "",
     endDate: els.endDate?.value || "",
     travelers: els.travelers?.value || "1 viajero",
@@ -291,8 +330,9 @@ function criteriaToParams() {
 function applyCriteriaFromUrl() {
   const params = new URLSearchParams(location.search);
   product = params.get("product") || product;
-  if (els.origin) els.origin.value = params.get("origin") || els.origin.value;
-  if (els.dest) els.dest.value = params.get("destination") || els.dest.value;
+  const config = activeConfig();
+  if (els.origin) els.origin.value = params.get("origin") || config.originDefault || els.origin.value;
+  if (els.dest) els.dest.value = params.get("destination") || config.destinationDefault || els.dest.value;
   if (els.startDate) els.startDate.value = params.get("startDate") || "";
   if (els.endDate) els.endDate.value = params.get("endDate") || "";
   if (els.startDate?.value) {
@@ -326,6 +366,23 @@ function syncResultsUrl() {
   history.replaceState(null, "", `results.html?${criteriaToParams().toString()}`);
 }
 
+function updateOverlayState() {
+  const panels = [els.calendarPanel, els.tripTypePanel, els.travelerPanel, els.originSuggest, els.destSuggest];
+  const hasOpenPanel = panels.some((panel) => panel && !panel.hidden);
+  document.body.classList.toggle("flyvero-overlay-open", hasOpenPanel);
+}
+
+function closeOpenPanels() {
+  [els.calendarPanel, els.tripTypePanel, els.travelerPanel, els.originSuggest, els.destSuggest].forEach((panel) => {
+    if (panel) panel.hidden = true;
+  });
+  updateOverlayState();
+}
+
+function isInsideOpenPanel(target) {
+  return Boolean(target.closest(".calendar-panel, .trip-type-panel, .traveler-panel, .suggest-panel, .date-wrap, .trip-options, .travelers-wrap, .origin-wrap, .destination-wrap"));
+}
+
 function renderSuggest(input, panel) {
   if (!input || !panel) return;
   if (product === "hotel" || (product === "package" && input === els.dest)) {
@@ -348,12 +405,13 @@ function renderSuggest(input, panel) {
   }
   const items = matches(input.value);
   const nearby = findAirport(input.value).nearby || [];
+  const airportsList = [...items, ...nearby].filter((airport, index, list) => list.findIndex((item) => item.code === airport.code) === index);
   panel.innerHTML = `
-    <div class="suggest-head"><strong>Aeropuertos disponibles</strong><span>Incluye aeropuertos cercanos cuando buscas por ciudad o codigo</span></div>
-    ${items.map((airport) => `<button type="button" class="suggest-item" data-value="${label(airport)}"><span class="airport-icon">A</span><span class="suggest-main"><strong>${label(airport)}</strong><span>${airport.name} - ${airport.country}</span></span><span class="airport-code">${airport.code}</span></button>`).join("")}
-    ${nearby.length > 1 ? `<div class="suggest-head"><strong>Cerca de ${findAirport(input.value).city}</strong><span>Alternativas utiles para encontrar mejor precio</span></div>${nearby.map((airport) => `<button type="button" class="suggest-item" data-value="${label(airport)}"><span class="airport-icon">+</span><span class="suggest-main"><strong>${label(airport)}</strong><span>${airport.name} - ${airport.country}</span></span><span class="airport-code">${airport.code}</span></button>`).join("")}` : ""}
+    <div class="suggest-head compact"><strong>Aeropuerto</strong></div>
+    ${airportsList.map((airport) => `<button type="button" class="suggest-item" data-value="${label(airport)}"><span class="airport-icon">A</span><span class="suggest-main"><strong>${label(airport)}</strong><span>${airport.name} - ${airport.country}</span></span><span class="airport-code">${airport.code}</span></button>`).join("")}
   `;
   panel.hidden = false;
+  updateOverlayState();
 }
 
 function wireSuggest(input, panel) {
@@ -368,6 +426,7 @@ function wireSuggest(input, panel) {
     if (!button) return;
     input.value = button.dataset.value;
     panel.hidden = true;
+    updateOverlayState();
     updateResults();
   });
 }
@@ -389,12 +448,12 @@ function updateDateText() {
   const oneWay = product === "flight" && tripType === "oneway";
   if (els.startDate.value && els.endDate.value) {
     els.dateTitle.textContent = `${fmt.format(parseIso(els.startDate.value))} - ${fmt.format(parseIso(els.endDate.value))}`;
-    els.dateSubtitle.textContent = config.selectedDate;
+    els.dateSubtitle.textContent = dateModeLabel();
   } else if (els.startDate.value && oneWay) {
     els.dateTitle.textContent = `${fmt.format(parseIso(els.startDate.value))}`;
-    els.dateSubtitle.textContent = "Solo ida seleccionado";
+    els.dateSubtitle.textContent = dateModeLabel();
   } else if (els.startDate.value) {
-    els.dateTitle.textContent = `${fmt.format(parseIso(els.startDate.value))} - vuelta`;
+    els.dateTitle.textContent = `${fmt.format(parseIso(els.startDate.value))}`;
     els.dateSubtitle.textContent = config.pendingDate;
   } else {
     els.dateTitle.textContent = "Selecciona fechas";
@@ -404,19 +463,23 @@ function updateDateText() {
 
 function updateTravelerText() {
   const adultText = `${travelerState.adults} adulto${travelerState.adults === 1 ? "" : "s"}`;
-  const childText = `${travelerState.children} nino${travelerState.children === 1 ? "" : "s"}`;
-  const babyText = `${travelerState.babies} bebe${travelerState.babies === 1 ? "" : "s"}`;
+  const childText = `${travelerState.children} niño${travelerState.children === 1 ? "" : "s"}`;
+  const babyText = `${travelerState.babies} bebé${travelerState.babies === 1 ? "" : "s"}`;
   const people = travelerState.adults + travelerState.children + travelerState.babies;
   let title = `${adultText}, ${childText}, ${babyText}`;
   let subtitle = `${people} pasajero${people === 1 ? "" : "s"}`;
-  if (product === "hotel" || product === "package") {
+  if (product === "hotel") {
     const hotelPeople = travelerState.adults + travelerState.children;
-    title = `${hotelPeople} persona${hotelPeople === 1 ? "" : "s"}, ${travelerState.rooms} habitacion${travelerState.rooms === 1 ? "" : "es"}`;
-    subtitle = `${travelerState.children} nino${travelerState.children === 1 ? "" : "s"} de 0 a 17 anos`;
+    title = `${adultText}, ${childText}`;
+    subtitle = `${hotelPeople} persona${hotelPeople === 1 ? "" : "s"}, ${travelerState.rooms} habitación${travelerState.rooms === 1 ? "" : "es"}`;
+  }
+  if (product === "package") {
+    title = `${adultText}, ${childText}, ${babyText}`;
+    subtitle = `${people} viajero${people === 1 ? "" : "s"}, ${travelerState.rooms} habitación${travelerState.rooms === 1 ? "" : "es"}`;
   }
   if (product === "car") {
     title = `${travelerState.drivers} conductor${travelerState.drivers === 1 ? "" : "es"}`;
-    subtitle = `${travelerState.babySeats} silla${travelerState.babySeats === 1 ? "" : "s"} de bebe`;
+    subtitle = `${travelerState.babySeats} silla${travelerState.babySeats === 1 ? "" : "s"} de bebé`;
   }
   if (els.travelerTitle) els.travelerTitle.textContent = title;
   if (els.travelerSubtitle) els.travelerSubtitle.textContent = subtitle;
@@ -429,20 +492,27 @@ function renderTravelerPanel() {
   const rows =
     product === "car"
       ? [
-        { key: "drivers", title: "Conductores", sub: "Personas que conduciran el coche", min: 1 },
-        { key: "babySeats", title: "Sillas de bebe", sub: "Extras para bebes o ninos pequenos", min: 0 },
+        { key: "drivers", title: "Conductores", sub: "Personas que conducirán el coche", min: 1 },
+        { key: "babySeats", title: "Sillas de bebé", sub: "Extras para bebés o niños pequeños", min: 0 },
       ]
-      : product === "hotel" || product === "package"
+      : product === "hotel"
         ? [
-          { key: "adults", title: "Adultos", sub: "16 anos o mas", min: 1 },
-          { key: "children", title: "Ninos", sub: "0 - 17 anos", min: 0 },
-          { key: "rooms", title: "Habitaciones", sub: "Numero de habitaciones", min: 1 },
+          { key: "adults", title: "Adultos", sub: "16 años o más", min: 1 },
+          { key: "children", title: "Niños", sub: "0 - 17 años", min: 0 },
+          { key: "rooms", title: "Habitaciones", sub: "Número de habitaciones", min: 1 },
         ]
-        : [
-          { key: "adults", title: "Adultos", sub: "16 anos o mas al volar", min: 1 },
-          { key: "children", title: "Ninos", sub: "2 - 15 anos al volar", min: 0 },
-          { key: "babies", title: "Bebes", sub: "Hasta 2 anos al volar", min: 0 },
-        ];
+        : product === "package"
+          ? [
+            { key: "adults", title: "Adultos", sub: "16 años o más", min: 1 },
+            { key: "children", title: "Niños", sub: "2 - 15 años al volar", min: 0 },
+            { key: "babies", title: "Bebés", sub: "Hasta 2 años al volar", min: 0 },
+            { key: "rooms", title: "Habitaciones", sub: "Número de habitaciones", min: 1 },
+          ]
+          : [
+          { key: "adults", title: "Adultos", sub: "16 años o más al volar", min: 1 },
+          { key: "children", title: "Niños", sub: "2 - 15 años al volar", min: 0 },
+          { key: "babies", title: "Bebés", sub: "Hasta 2 años al volar", min: 0 },
+          ];
   els.travelerPanel.innerHTML = `
     <div class="traveler-head">${config.travelerTitle}</div>
     ${rows.map((row) => `
@@ -472,12 +542,12 @@ function renderProductExtras() {
       <input type="time" data-car-extra="pickupTime" value="${carState.pickupTime}" />
     </label>
     <label class="extra-time">
-      Hora devolucion
+      Hora devolución
       <input type="time" data-car-extra="returnTime" value="${carState.returnTime}" />
     </label>
     <label class="extra-check">
       <input type="checkbox" data-car-extra="age25to70" ${carState.age25to70 ? "checked" : ""} />
-      Conductor entre 25 y 70 anos
+      Conductor entre 25 y 70 años
     </label>
     <label class="extra-check">
       <input type="checkbox" data-car-extra="differentOffice" ${carState.differentOffice ? "checked" : ""} />
@@ -490,7 +560,7 @@ function updateSmartFilterLabel() {
   if (!els.smartFilterLabel) return;
   const labels = {
     flight: "Vuelos directos",
-    hotel: "Cancelacion flexible",
+    hotel: "Cancelación flexible",
     car: "Kilometraje incluido",
     package: "Ahorro combinado",
   };
@@ -499,25 +569,50 @@ function updateSmartFilterLabel() {
 
 function renderCalendar() {
   if (!els.calendarGrid) return;
-  const first = new Date(calendarMonthDate.getFullYear(), calendarMonthDate.getMonth(), 1);
-  const offset = (first.getDay() + 6) % 7;
-  const days = new Date(calendarMonthDate.getFullYear(), calendarMonthDate.getMonth() + 1, 0).getDate();
   if (els.calendarMonth) {
-    els.calendarMonth.textContent = new Intl.DateTimeFormat("es-ES", { month: "long", year: "numeric" }).format(calendarMonthDate);
+    els.calendarMonth.textContent = product === "hotel" ? "Elige entrada y salida" : product === "car" ? "Elige recogida y devolución" : "Elige fecha de ida";
   }
-  let html = "";
-  for (let i = 0; i < offset; i += 1) html += '<span class="day-empty"></span>';
-  for (let day = 1; day <= days; day += 1) {
-    const date = new Date(calendarMonthDate.getFullYear(), calendarMonthDate.getMonth(), day);
-    const value = toIso(date);
-    const price = priceFor(date);
-    const start = els.startDate.value;
-    const end = els.endDate.value;
-    const inRange = start && end && parseIso(value) > parseIso(start) && parseIso(value) < parseIso(end);
-    const selected = value === start || value === end;
-    html += `<button type="button" class="day-btn ${level(price)} ${selected ? "selected" : ""} ${inRange ? "in-range" : ""}" data-date="${value}"><strong>${day}</strong><span>${euro.format(price)}</span></button>`;
+  if (els.priceLegend) {
+    if (product === "flight") {
+      els.priceLegend.innerHTML = `
+        <div class="calendar-trip-switch" role="group" aria-label="Opciones de vuelo">
+          <button type="button" data-calendar-trip="oneway" class="${tripType === "oneway" ? "active" : ""}">Solo ida</button>
+          <button type="button" data-calendar-trip="roundtrip" class="${tripType !== "oneway" ? "active" : ""}">Ida y vuelta</button>
+          <button type="button" data-calendar-direct="toggle" class="${els.directFlights?.checked ? "active" : ""}">Directo</button>
+        </div>
+        <div class="calendar-price-key"><span><b class="dot cheap"></b> barato</span><span><b class="dot mid"></b> medio</span><span><b class="dot high"></b> alto</span></div>
+      `;
+    } else {
+      els.priceLegend.innerHTML = '<div class="calendar-price-key"><span><b class="dot cheap"></b> barato</span><span><b class="dot mid"></b> medio</span><span><b class="dot high"></b> alto</span></div>';
+    }
   }
-  els.calendarGrid.innerHTML = html;
+  const renderMonth = (monthDate) => {
+    const first = new Date(monthDate.getFullYear(), monthDate.getMonth(), 1);
+    const offset = (first.getDay() + 6) % 7;
+    const days = new Date(monthDate.getFullYear(), monthDate.getMonth() + 1, 0).getDate();
+    const monthTitle = new Intl.DateTimeFormat("es-ES", { month: "long", year: "numeric" }).format(monthDate);
+    let daysHtml = "";
+    for (let i = 0; i < offset; i += 1) daysHtml += '<span class="day-empty"></span>';
+    for (let day = 1; day <= days; day += 1) {
+      const date = new Date(monthDate.getFullYear(), monthDate.getMonth(), day);
+      const value = toIso(date);
+      const price = priceFor(date);
+      const start = els.startDate.value;
+      const end = els.endDate.value;
+      const inRange = start && end && parseIso(value) > parseIso(start) && parseIso(value) < parseIso(end);
+      const selected = value === start || value === end;
+      daysHtml += `<button type="button" class="day-btn ${level(price)} ${selected ? "selected" : ""} ${inRange ? "in-range" : ""}" data-date="${value}"><strong>${day}</strong><span>${euro.format(price)}</span></button>`;
+    }
+    return `
+      <section class="calendar-month-block">
+        <h3>${monthTitle}</h3>
+        <div class="month-weekdays" aria-hidden="true"><span>LUN</span><span>MAR</span><span>MIE</span><span>JUE</span><span>VIE</span><span>SAB</span><span>DOM</span></div>
+        <div class="month-days">${daysHtml}</div>
+      </section>
+    `;
+  };
+  els.calendarGrid.classList.add("months-view");
+  els.calendarGrid.innerHTML = renderMonth(calendarMonthDate) + renderMonth(new Date(calendarMonthDate.getFullYear(), calendarMonthDate.getMonth() + 1, 1));
   if (els.calendarStep) {
     const config = activeConfig();
     els.calendarStep.textContent = product === "flight" && tripType === "oneway" ? "Elige la fecha de ida" : selecting === "start" ? config.stepStart : config.stepEnd;
@@ -548,9 +643,9 @@ function buildOffers() {
       product === "flight"
         ? ["Directo", "Precio bajo", "Buen horario", "Tarifa clara"][index]
         : product === "hotel"
-          ? ["Centro", "Cancelacion flexible", "Muy valorado", "Desayuno disponible"][index]
+          ? ["Centro", "Cancelación flexible", "Muy valorado", "Desayuno disponible"][index]
           : product === "car"
-            ? ["Kilometraje incluido", "Maletero amplio", "Cancelacion flexible", "Recogida rapida"][index]
+            ? ["Kilometraje incluido", "Maletero amplio", "Cancelación flexible", "Recogida rápida"][index]
             : ["Vuelo + hotel", "Ahorro combinado", "Mejor valorado", "Flexible"][index];
     return { name, price, duration, meta, from, to };
   });
@@ -601,15 +696,15 @@ function renderOffers() {
 function renderCheapDeals() {
   if (!els.cheapDeals) return;
   const titles = {
-    flight: "Opciones mas baratas ahora",
+    flight: "Opciones más baratas ahora",
     hotel: "Hoteles con mejor precio",
-    car: "Coches mas economicos",
+    car: "Coches más económicos",
     package: "Paquetes con ahorro",
   };
   const offers = buildOffers().sort((a, b) => a.price - b.price).slice(0, 3);
   els.cheapDeals.innerHTML = `
     <div class="cheap-deals-head">
-      <strong>${titles[product] || "Opciones mas baratas"}</strong>
+      <strong>${titles[product] || "Opciones más baratas"}</strong>
       <span>Ordenadas por precio estimado</span>
     </div>
     <div class="cheap-deals-grid">
@@ -628,7 +723,7 @@ function updateTripTypeText() {
   const labels = {
     oneway: { text: "Solo ida", icon: "->" },
     roundtrip: { text: "Ida y vuelta", icon: "R" },
-    multi: { text: "Multiples destinos", icon: "M" },
+    multi: { text: "Múltiples destinos", icon: "M" },
   };
   const current = labels[tripType] || labels.roundtrip;
   if (els.tripTypeInput) els.tripTypeInput.value = tripType;
@@ -643,8 +738,8 @@ function renderMultiCityPanel() {
   if (els.multiCityPanel.hidden) return;
   els.multiCityPanel.innerHTML = `
     <div class="multi-city-head">
-      <strong>Multiples destinos</strong>
-      <span>Combina varios vuelos en una sola busqueda</span>
+      <strong>Múltiples destinos</strong>
+      <span>Combina varios vuelos en una sola búsqueda</span>
     </div>
     ${multiFlights.map((flight, index) => `
       <section class="multi-flight-card" data-index="${index}">
@@ -667,12 +762,13 @@ function renderMultiCityPanel() {
         </label>
       </section>
     `).join("")}
-    <button type="button" class="add-flight-btn" id="addFlightBtn">+ Anadir otro vuelo</button>
+    <button type="button" class="add-flight-btn" id="addFlightBtn">+ Añadir otro vuelo</button>
   `;
 }
 
 function applyProductMode(resetValues = true) {
   const config = activeConfig();
+  updateHeroVisual();
   els.tripForm?.classList.toggle("is-hotel", product === "hotel");
   els.tripForm?.classList.toggle("is-car", product === "car");
   els.tripForm?.classList.toggle("is-package", product === "package");
@@ -743,9 +839,11 @@ els.form?.addEventListener("submit", (event) => {
 els.dateTrigger?.addEventListener("click", () => {
   els.calendarPanel.hidden = false;
   renderCalendar();
+  updateOverlayState();
 });
 els.closeCalendar?.addEventListener("click", () => {
   els.calendarPanel.hidden = true;
+  updateOverlayState();
 });
 els.prevMonth?.addEventListener("click", () => {
   calendarMonthDate = new Date(calendarMonthDate.getFullYear(), calendarMonthDate.getMonth() - 1, 1);
@@ -758,9 +856,11 @@ els.nextMonth?.addEventListener("click", () => {
 els.tripTypeTrigger?.addEventListener("click", () => {
   if (!els.tripTypePanel) return;
   els.tripTypePanel.hidden = !els.tripTypePanel.hidden;
+  updateOverlayState();
 });
 els.closeTripType?.addEventListener("click", () => {
   if (els.tripTypePanel) els.tripTypePanel.hidden = true;
+  updateOverlayState();
 });
 els.tripTypePanel?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-trip-type]");
@@ -776,6 +876,26 @@ els.tripTypePanel?.addEventListener("click", (event) => {
   }
   updateTripTypeText();
   els.tripTypePanel.hidden = true;
+  updateOverlayState();
+  updateResults();
+});
+els.priceLegend?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-calendar-trip]");
+  const directButton = event.target.closest("[data-calendar-direct]");
+  if (!button && !directButton) return;
+  if (directButton) {
+    if (els.directFlights) els.directFlights.checked = !els.directFlights.checked;
+    renderCalendar();
+    updateResults();
+    return;
+  }
+  tripType = button.dataset.calendarTrip;
+  if (tripType === "oneway") {
+    els.endDate.value = "";
+    selecting = "start";
+  }
+  updateTripTypeText();
+  renderCalendar();
   updateResults();
 });
 els.multiCityPanel?.addEventListener("input", (event) => {
@@ -829,6 +949,13 @@ els.productExtraOptions?.addEventListener("change", (event) => {
   carState[key] = input.type === "checkbox" ? input.checked : input.value;
   updateResults();
 });
+document.addEventListener("pointerdown", (event) => {
+  if (!document.body.classList.contains("flyvero-overlay-open")) return;
+  if (isInsideOpenPanel(event.target)) return;
+  closeOpenPanels();
+  event.preventDefault();
+  event.stopPropagation();
+}, true);
 els.clearDates?.addEventListener("click", () => {
   els.startDate.value = "";
   els.endDate.value = "";
@@ -837,6 +964,7 @@ els.clearDates?.addEventListener("click", () => {
 });
 els.applyDates?.addEventListener("click", () => {
   if (els.startDate.value && (els.endDate.value || (product === "flight" && tripType !== "roundtrip"))) els.calendarPanel.hidden = true;
+  updateOverlayState();
   updateResults();
 });
 els.calendarGrid?.addEventListener("click", (event) => {
@@ -860,6 +988,7 @@ els.travelerTrigger?.addEventListener("click", () => {
   if (!els.travelerPanel) return;
   els.travelerPanel.hidden = !els.travelerPanel.hidden;
   renderTravelerPanel();
+  updateOverlayState();
 });
 els.travelerPanel?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-traveler]");
@@ -875,6 +1004,8 @@ document.addEventListener("click", (event) => {
   if (!event.target.closest(".destination-wrap") && els.destSuggest) els.destSuggest.hidden = true;
   if (!event.target.closest(".travelers-wrap") && els.travelerPanel) els.travelerPanel.hidden = true;
   if (!event.target.closest(".trip-options") && els.tripTypePanel) els.tripTypePanel.hidden = true;
+  if (!event.target.closest(".date-wrap") && els.calendarPanel && !els.calendarPanel.hidden && !event.target.closest(".calendar-panel")) els.calendarPanel.hidden = true;
+  updateOverlayState();
 });
 [els.origin, els.dest, els.travelers, els.priceFilter, els.sortFilter, els.flexFilter, els.directFlights].forEach((control) => {
   control?.addEventListener("input", updateResults);
