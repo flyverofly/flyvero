@@ -1,0 +1,246 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Flyvero compara vuelos, hoteles, coches y paquetes con precios claros y buscadores adaptados a cada viaje." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#1454c8" />
+  <link rel="canonical" href="https://www.flyvero.es/" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Flyvero" />
+  <meta property="og:title" content="Flyvero | Vuelos, hoteles y coches al mejor precio" />
+  <meta property="og:description" content="Compara vuelos, hoteles, coches y paquetes con precios claros y buscadores adaptados a cada viaje." />
+  <meta property="og:url" content="https://www.flyvero.es/" />
+  <meta property="og:image" content="https://www.flyvero.es/assets/travel-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Flyvero | Vuelos, hoteles y coches al mejor precio" />
+  <meta name="twitter:description" content="Compara vuelos, hoteles, coches y paquetes con precios claros y buscadores adaptados a cada viaje." />
+  <meta name="twitter:image" content="https://www.flyvero.es/assets/travel-hero.png" />
+  <title>Flyvero | Vuelos, hoteles y coches al mejor precio</title>
+  <link rel="icon" href="assets/flyvero-mark.png" type="image/png" />
+  <!-- Google AdSense: cuando tengas tu ID real, coloca aqui el script oficial con tu ca-pub. -->
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Flyvero",
+      "url": "https://www.flyvero.es/",
+      "description": "Comparador de vuelos, hoteles, coches y paquetes de viaje.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Flyvero",
+        "url": "https://www.flyvero.es/",
+        "logo": "https://www.flyvero.es/assets/flyvero-mark.png"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.flyvero.es/results?product=flight&destination={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Flyvero inicio">
+      <img src="assets/flyvero-mark.png" alt="" aria-hidden="true" />
+      <span>Flyvero</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="/" data-nav-product="flight">Vuelos</a>
+      <a href="/" data-nav-product="hotel">Hoteles</a>
+      <a href="/" data-nav-product="car">Coches</a>
+      <a href="results.html">Ofertas</a>
+      <a href="#guides">Guías</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="ghost-btn">EUR</button>
+      <select class="language-select" data-language-select aria-label="Idioma">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+        <option value="de">DE</option>
+        <option value="it">IT</option>
+      </select>
+      <button type="button" class="ghost-btn">Ayuda</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="search">
+      <img class="hero-bg" src="assets/travel-hero.png" alt="Costa con avión y coche" />
+      <div class="hero-shade"></div>
+      <img class="plane" src="assets/airplane.gif" alt="" aria-hidden="true" />
+
+      <div class="hero-content">
+        <p class="eyebrow">Flyvero Travel Search</p>
+        <h1>Busca menos. Viaja mejor.</h1>
+        <p class="hero-copy">Compara vuelos, hoteles, coches y paquetes con precios claros y opciones preparadas para cada tipo de viaje.</p>
+        <div class="hero-highlights" aria-label="Resumen Flyvero">
+          <span>Vuelos directos</span>
+          <span>Hoteles y coches</span>
+          <span>Precios ordenados</span>
+        </div>
+
+        <section class="search-card" aria-label="Buscador Flyvero">
+          <div class="product-tabs" role="tablist" aria-label="Tipo de viaje">
+            <button type="button" class="product-tab active" data-product="flight">Vuelos</button>
+            <button type="button" class="product-tab" data-product="hotel">Hoteles</button>
+            <button type="button" class="product-tab" data-product="car">Coches</button>
+            <button type="button" class="product-tab" data-product="package">Vuelo + hotel</button>
+          </div>
+
+          <form class="trip-form" id="tripForm">
+            <div class="trip-options" id="flightOptions">
+              <button class="trip-type-trigger" id="tripTypeTrigger" type="button">
+                <span id="tripTypeIcon">R</span>
+                <strong id="tripTypeText">Ida y vuelta</strong>
+              </button>
+              <input id="tripTypeInput" type="hidden" value="roundtrip" />
+              <div class="trip-type-panel" id="tripTypePanel" hidden>
+                <div class="trip-type-top">
+                  <button type="button" id="closeTripType" aria-label="Cerrar tipo de viaje">X</button>
+                  <strong>Tipo de viaje</strong>
+                </div>
+                <button type="button" class="trip-type-option" data-trip-type="oneway"><span>-&gt;</span><strong>Solo ida</strong></button>
+                <button type="button" class="trip-type-option active" data-trip-type="roundtrip"><span>R</span><strong>Ida y vuelta</strong></button>
+                <button type="button" class="trip-type-option" data-trip-type="multi"><span>M</span><strong>Múltiples destinos</strong></button>
+              </div>
+              <label class="direct-option" id="directOption">
+                <input id="directFlights" type="checkbox" />
+                Vuelos directos
+              </label>
+            </div>
+            <div class="product-extra-options" id="productExtraOptions" hidden></div>
+            <div class="input-group origin-wrap">
+              <label for="originInput" id="originLabel">Origen</label>
+              <input id="originInput" type="text" value="Barcelona (BCN)" autocomplete="off" />
+              <div class="suggest-panel" id="originSuggest" hidden></div>
+            </div>
+
+            <button class="swap-btn" type="button" id="swapBtn" aria-label="Intercambiar origen y destino">&harr;</button>
+
+            <div class="input-group destination-wrap">
+              <label for="destinationInput" id="destinationLabel">Destino</label>
+              <input id="destinationInput" type="text" value="París (CDG)" autocomplete="off" />
+              <div class="suggest-panel" id="destinationSuggest" hidden></div>
+            </div>
+
+            <div class="input-group date-wrap">
+              <label id="dateLabel">Fechas</label>
+              <button class="date-trigger" id="dateTrigger" type="button">
+                <strong id="dateTitle">Selecciona fechas</strong>
+                <span id="dateSubtitle">Ida y vuelta</span>
+              </button>
+              <input id="startDate" type="hidden" />
+              <input id="endDate" type="hidden" />
+              <div class="calendar-panel" id="calendarPanel" hidden>
+                <div class="calendar-top">
+                  <button type="button" class="month-nav" id="prevMonth" aria-label="Mes anterior">&lt;</button>
+                  <div>
+                    <strong id="calendarMonth">junio de 2026</strong>
+                    <span id="calendarStep">Primero elige la ida</span>
+                  </div>
+                  <button type="button" class="month-nav" id="nextMonth" aria-label="Mes siguiente">&gt;</button>
+                  <button type="button" id="closeCalendar" aria-label="Cerrar calendario">&times;</button>
+                </div>
+                <div class="price-legend">
+                  <span><b class="dot cheap"></b> barato</span>
+                  <span><b class="dot mid"></b> medio</span>
+                  <span><b class="dot high"></b> alto</span>
+                </div>
+                <div class="calendar-grid" id="calendarGrid"></div>
+                <div class="calendar-footer">
+                  <button type="button" class="clear-btn" id="clearDates">Limpiar</button>
+                  <button type="button" class="done-btn" id="applyDates">Aplicar fechas</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="multi-city-panel" id="multiCityPanel" hidden></div>
+
+            <div class="input-group travelers-wrap">
+              <label>Viajeros</label>
+              <button class="traveler-trigger" id="travelerTrigger" type="button">
+                <strong id="travelerTitle">1 adulto</strong>
+                <span id="travelerSubtitle">1 pasajero</span>
+              </button>
+              <input id="travelersSelect" type="hidden" value="1 adulto" />
+              <div class="traveler-panel" id="travelerPanel" hidden></div>
+            </div>
+
+            <button class="search-btn" type="submit">Buscar ofertas</button>
+          </form>
+
+        </section>
+      </div>
+    </section>
+
+    <section class="section" id="hotels">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark">Inspiración</p>
+          <h2>Destinos populares</h2>
+        </div>
+        <p>Escapadas seleccionadas para viajar mejor y pagar menos.</p>
+      </div>
+      <div class="destination-grid">
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80" alt="París" />
+          <div><h3>París</h3><p>Escapadas urbanas y hoteles céntricos.</p><strong>Desde 49 &euro;</strong></div>
+        </article>
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80" alt="Londres" />
+          <div><h3>Londres</h3><p>Fines de semana, compras y eventos.</p><strong>Desde 39 &euro;</strong></div>
+        </article>
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Dubái" />
+          <div><h3>Dubái</h3><p>Hoteles premium y larga distancia.</p><strong>Desde 189 &euro;</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section benefits" id="cars">
+      <div class="benefit-card"><h3>Precios claros</h3><p>Ordena las opciones por precio, duración y mejor valor para decidir rápido.</p></div>
+      <div class="benefit-card"><h3>Fechas claras</h3><p>Selecciona ida, vuelta, entrada, salida o devolución según el servicio.</p></div>
+      <div class="benefit-card"><h3>Hoteles</h3><p>Busca por destino, zona o nombre de hotel con entrada, salida y habitaciones.</p></div>
+      <div class="benefit-card"><h3>Coches</h3><p>Selecciona recogida, devolución, conductores y extras desde el mismo buscador.</p></div>
+    </section>
+
+    <section class="section guides" id="guides">
+      <div class="section-head">
+        <div><p class="eyebrow dark">Guías Flyvero</p><h2>Ideas para tu próximo viaje</h2></div>
+      </div>
+      <div class="guide-grid">
+        <article><a href="guias/vuelos-baratos-desde-espana.html"><span>Vuelos</span><h3>Vuelos baratos desde Espana</h3><p>Compara aeropuertos, horarios y fechas para encontrar mejores precios.</p></a></article>
+        <article><a href="guias/mejor-mes-viajar-paris.html"><span>Fechas</span><h3>Mejor mes para viajar a Paris</h3><p>Clima, demanda hotelera y fines de semana recomendados.</p></a></article>
+        <article><a href="guias/hoteles-baratos-madrid.html"><span>Hoteles</span><h3>Hoteles baratos en Madrid</h3><p>Zonas, habitaciones y fechas para ajustar mejor el presupuesto.</p></a></article>
+        <article><a href="guias/alquiler-coches-espana.html"><span>Coches</span><h3>Alquiler de coches en Espana</h3><p>Recogida, devolucion, conductores jovenes y extras familiares.</p></a></article>
+        <article><a href="guias/vuelo-hotel-ahorrar.html"><span>Paquetes</span><h3>Vuelo + hotel: cuando ahorrar</h3><p>Compara paquetes frente a reservas separadas para ver el coste total.</p></a></article>
+        <article><a href="guias/escapadas-fin-de-semana.html"><span>Escapadas</span><h3>Escapadas de fin de semana</h3><p>Ideas de destinos cortos desde Espana con vuelo, hotel y coche.</p></a></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><img src="assets/flyvero-mark.png" alt="" aria-hidden="true" /><span>Flyvero</span></div>
+    <div>
+      <a href="/" data-i18n="searchTrips">Buscar viajes</a>
+      <a href="results.html" data-i18n="deals">Ofertas</a>
+      <a href="#guides" data-i18n="guides">Guías</a>
+      <a href="privacidad.html" data-i18n="privacy">Privacidad</a>
+      <a href="afiliados.html" data-i18n="affiliates">Afiliados</a>
+      <a href="terminos.html" data-i18n="terms">Términos</a>
+    </div>
+    <p data-i18n="footerDisclosure">Flyvero compara opciones de viaje y puede recibir comisión si reservas desde enlaces de proveedores. Los precios son orientativos hasta confirmar disponibilidad en la web final del proveedor.</p>
+    <p class="footer-contact">Soporte: <a href="mailto:support@flyvero.es">support@flyvero.es</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
