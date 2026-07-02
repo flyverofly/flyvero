@@ -1,0 +1,3 @@
+# Google AdSense
+# Cuando tengas tu ID real, reemplaza la linea comentada por:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
